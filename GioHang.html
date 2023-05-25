@@ -1,0 +1,365 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0
+        }
+
+        #Head {
+            background-color: gold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        nav > ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav > ul > li, a {
+                color: white;
+            }
+
+        button {
+            background-color: rgba(255,152,10,.6);
+            border: none;
+            border-radius: 3px;
+            width: 130px;
+            height: 43px;
+            display: flex;
+            align-items: center;
+        }
+
+        #Title {
+            font-size: 30px;
+            margin-left: 25px;
+        }
+
+        .TieuDe {
+            font-size: 15px;
+            margin: 5px;
+        }
+
+        .TieuDe > a > img {
+                float: left;
+                margin-right: 10px;
+                margin-left: 4px;
+            }
+
+        #Search {
+            width: 280px;
+            height: 37px;
+            border: none;
+            border-radius: 25px;
+            margin-left: 68px;
+            margin-bottom: 5px;
+            background-color: white;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        #Searching > img {
+            margin-left: 60px;
+            margin-top: 5px;
+            position: relative;
+            right: 98px;
+            top: 5px;
+        }
+
+        #GioHang > button {
+            width: 120px;
+        }
+
+        #LogIn {
+            border-right: none;
+            margin-right: 65px;
+        }
+
+        .Sin > a:hover {
+            color: orangered;
+            font-size: 115%;
+        }
+
+        .Sin {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-right: 1px solid brown;
+            padding: 3px 5px 3px 5px;
+            display: inline;
+        }
+
+        #Body {margin-bottom:140px;
+               font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .tdTable > a> img {
+            width: 240px;
+            height: 150px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 35px;
+            padding-bottom: 10px;
+        }
+        table{
+            margin-left: 70px;
+            font-size:17px;
+        }
+        #trTable {
+            border: 1px solid lightgray;
+            font-size: 19px;
+        }
+        #trTable > th {
+                background-color: rgb(239, 239, 239);
+                text-transform:capitalize;
+                padding: 6px;
+            }
+        .Info {
+            padding-top: 10px;
+        }
+        .Info >a >p{
+            text-align:left;
+            padding-left:10px;
+        }
+        td {
+            padding: 3px;
+        }
+        .Price >a { color:red;
+                 font-weight:bold;
+        }
+        #BuyIt {text-transform:uppercase;
+        }
+        .tdTable {
+            text-align: center;
+        }
+
+
+        tr > td >input:hover {
+            color: white;
+            background-color:orangered;
+            border: none;
+            box-shadow: 0px 0px 5px black;
+        }
+
+
+
+        #Foot {
+            clear: both;
+            height: 180px;
+            border-top: 1px solid lightgray;
+        }
+
+        .Inline {
+            float: left;
+            margin-right: 110px;
+        }
+
+        #GTT1 {
+            margin-left: 70px;
+        }
+
+        .GTThem > p > a {
+            color: black;
+            line-height: 30px;
+        }
+
+
+         .GTThem > p > a:hover {
+                color: deepskyblue;
+            }
+
+        .Blue {
+            color: deepskyblue;
+        }
+
+        .CungHang > ul {
+            width: 300px;
+            padding:2px;
+        }
+
+        .CungHang {
+            float: right;
+            margin-right: 50px;
+        }
+
+        .CungHang > p {
+                padding-left: 40px;
+            }
+
+        #Last {
+            clear: both;
+            height: 70px;
+            background-color: lightgray;
+            text-align: center;
+            padding-top: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="Head">
+        <ul>
+            <li class="TieuDe" id="Title">
+                <a href="Index.html"> <img width="50px" height="35px" src="hinhanh/nhan.jpg" />  </a>
+                <a href="Index.html"> <b> myshop.com </b> </a>
+            </li>
+            <li id="TimKiem">
+                <div id="Searching">
+                    <input type="text" id="Search" placeholder="Bạn tìm gì..." />
+                    <img width="23px" height="23px" src="hinhanh/lup.jpg" />
+                </div>
+            </li>
+
+            <li id="LichSu">
+                <button class="TieuDe">
+                    <a href="LichSuGioHang.html">  <img width="25px" height="25px" src="hinhanh/lsgh.jpg" />  </a>
+                    <a href="LichSuGioHang.html"> <p> Lịch sử <br /> đơn hàng</p>  </a>
+                </button>
+
+            </li>
+            <li id="GioHang">
+                <button class="TieuDe" style="font-size: 16px; ">
+                    <a href="GioHang.html"> <img width="25px" height="25px" src="hinhanh/gio.jpg" /> </a>
+                    <a href="GioHang.html"><p>  Giỏ hàng</p></a>
+                </button>
+            </li>
+            <li>
+                <div id="Register" class="Sin"> <a href="DangKy.html"> Đăng Ký </a> </div>
+                <div id="LogIn" class="Sin"> <a href="DangNhap.html"> Đăng Nhập </a> </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="Body">
+        <h1> GIỎ HÀNG </h1>
+        <table  style="width: 92%; height: 250px">
+            <tr id="trTable">
+                <th class="hi">
+                   
+                    Sản Phẩm
+                </th>
+                <th class="tdTable ">
+                    Thông tin
+                </th>
+                <th class="tdTable">
+                    giá
+                </th>
+                <th class="tdTable">
+                    số lượng
+                </th>
+            </tr>
+            <tr id=" hihi">
+                <td class="tdTable">
+                    <a href="BaloHope.html" style="color:black;">
+                        <img src="hinhanh/balo jhope.jpg">
+                        <p> <b>Laptop Apple MacBook Air M1 2020 </b> </p>
+                        </a>
+                </td>
+                <td class="tdTable Info">
+                    <a href="hinhanh/balo jhope.jpg" style="color:black;">
+                        <p>
+                            CPU:Apple M1 <br />
+                        </p>
+                        <p>
+                            RAM:8 GB <br />
+                        </p>
+                        <p>
+                            Ổ cứng: 256 GB SSD <br />
+                        </p>
+                        <p>    Màn hình:13.3" <br /> </p>
+                        <p> Thiết kế: Vỏ kim loại</p>
+                        <p>Kích thước: 304.1- 212.4 mm <br />  </p>
+                        <p> Trọng lượng:1.29 kg <br /> </p>
+                        </a>
+                </td>
+                <td class="tdTable Price">
+                    <a href="BaloHope.html" >
+                        20.999.000  <sup>đ</sup>
+                        </a>
+                </td>
+                <td class="tdTable">
+                    <a href="BaloHope.html" style="color:black;">
+                        1
+                    </a>
+                </td>
+                <td class="tdTable">  <input type="submit" id="BuyIt" value="Thanh Toán" style=" height: 40px; width: 120px;
+                 margin-top: 18px; padding-top: 7px; padding-bottom: 7px; font-weight:bold; font-size:14px; " /> </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="Foot">
+        <div id="ThongTinThem">
+            <div class="GTThem Inline" id="GTT1">
+                <p>
+                    <a href="#"> Tìm hiểu về mua trả góp </a> <br />
+                    <a href="#"> Chính sách bảo hành </a> <br />
+                    <a href="#"> Chính sách đổi trả</a> <br />
+                    <a href="#"> Bán hàng doanh nghiệp</a> <br />
+                    <a href="#"> In hóa đơn điện tử</a> <br />
+                </p>
+            </div>
+            <div class="GTThem Inline">
+                <p>
+                    <a href="#"> Tuyển dụng</a> <br />
+                    <a href="#"> Chi nhánh hoạt động </a> <br />
+                    <a href="#"> Giới thiệu doanh nghiệp </a> <br />
+                    <a href="#"> Gửi góp ý, khiếu nại </a> <br />
+                    <a href="#"> Xem bản Mobile</a> <br />
+                </p>
+            </div>
+            <div class="LienHe Inline">
+                <p>
+                    <b> Tổng đài hỗ trợ </b>(Miễn phí cuộc gọi) <br />
+                    Gọi mua: <a href="#">  <b class="Blue"> 1800.1001 </b> </a> (7:30 - 22:00) <br />
+
+                    Kỹ thuật:  <a href="#">
+                        <b class="Blue"> 1800.1717 </b>
+                    </a> (7:30 - 22:00) <br />
+
+                    Khiếu nại:   <a href="#">
+                        <b class="Blue"> 1800.1007 </b>
+                    </a> (8:00 - 21:30) <br />
+
+                    Bảo hành:  <a href="#"> <b class="Blue"> 1800.1070  </b> </a> (8:00 - 21:00)<br />
+                </p>
+            </div>
+
+            <div class="CungHang">
+                <p>  Webside cùng tập đoàn </p>
+                <ul>
+                    <img width="70px" height="20px" src="Images/CungHang1.png" />
+                    <img width="70px" height="20px" src="Images/CungHang2.png" />
+                    <img width="70px" height="20px" src="Images/CungHang3.png" />
+                    <img width="70px" height="20px" src="Images/CungHang4.png" />
+                </ul>
+                <ul>
+                    <img width="70px" height="20px" src="Images/CungHang5.png" />
+                    <img width="70px" height="20px" src="Images/CungHang6.png" />
+                    <img width="70px" height="20px" src="Images/CungHang7.png" />
+                    <img width="70px" height="20px" src="Images/CungHang8.png" />
+                </ul>
+            </div>
+
+        </div>
+        <div id="Last">
+            <p>
+                Họ và tên: Võ Thị Bảo Ngọc ; MSSV:2001210162 ; Lớp:12DHTH02
+            </br>Đây là sản phẩm báo cáo cuối kỳ cho bộ môn thiết kế web
+             </p>
+
+        </div>
+    </div>
+</body>
+</html>

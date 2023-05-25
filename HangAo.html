@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style >
+        #Head {
+            background-color: gold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        nav > ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            nav > ul > li, a {
+                color: white;
+            }
+
+        button {
+            background-color: rgba(255,152,10,.6);
+            border: none;
+            border-radius: 3px;
+            width: 130px;
+            height: 43px;
+            display: flex;
+            align-items: center;
+        }
+
+        #Title {
+            font-size: 30px;
+            margin-left: 25px;
+        }
+
+        .TieuDe {
+            font-size: 15px;
+            margin: 5px;
+        }
+
+            .TieuDe > a > img {
+                float: left;
+                margin-right: 10px;
+                margin-left: 4px;
+            }
+
+        #Search {
+            width: 280px;
+            height: 37px;
+            border: none;
+            border-radius: 25px;
+            margin-left: 68px;
+            margin-bottom: 5px;
+            background-color: white;
+            outline: none;
+            padding-left: 20px;
+        }
+
+        #Searching > img {
+            margin-left: 60px;
+            margin-top: 5px;
+            position: relative;
+            right: 98px;
+            top: 5px;
+        }
+
+        #GioHang > button {
+            width: 120px;
+        }
+
+        #LogIn {
+            border-right: none;
+            margin-right: 65px;
+        }
+
+        .Sin > a:hover {
+            color: orangered;
+            font-size: 115%;
+        }
+
+        .Sin {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-right: 1px solid brown;
+            padding: 3px 5px 3px 5px;
+            display: inline;
+        }
+
+        body {
+            margin: 0;
+        }
+
+
+
+        #Body {
+            margin-left: 70px;
+            margin-bottom:30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        #Line { border-bottom:1px solid lightgray;
+                width:1220px;
+        }
+
+        .Hover_it1 > .Name > a:hover p{
+            color: deepskyblue;
+        }
+        .LapMau:hover {
+            transform: translateY(-10px);
+            transition: all 0.5s ease;
+        }
+
+
+        .LapMau {
+            width: 231px;
+            height: 520px;
+            float: left;
+            background-color: white;
+            margin: 0px 3px 2px 3px;
+            margin-top: 10px;
+        }
+
+        .LapMau {
+            margin-left: 5px;
+            font-size: 95%;
+        }
+
+        .AnhBia {
+            margin-left: 70px;
+        }
+
+        .ForTable {
+            margin-left: 67px;
+            margin-top: 60px;
+        }
+
+            .ForTable > div {
+                width: 235px;
+                height: 520px;
+                float: left;
+                background-color: white;
+                margin: 0px 3px 2px 3px;
+            }
+
+        #LapIntel1 {
+            margin-left: 6px;
+        }
+
+        .Center_it {
+            line-height: 15px;
+            padding-left: 10px;
+        }
+
+        .Hover_it {
+            text-decoration: none;
+            color: black;
+        }
+
+        .GiaGoc > b {
+            float: left;
+            text-decoration: line-through;
+            margin-right: 5px;
+        }
+
+        .Tru {
+            text-decoration: none;
+        }
+
+        .Gia {
+            color: red
+        }
+
+
+
+        .Tragop {
+            background-color: lightgray;
+            font-size: 88%;
+            border-radius: 2px;
+            width: 68px;
+            padding: 2px 6px;
+        }
+
+        .phantram {
+            background-color: red;
+            width: 74px;
+            height: 20px;
+            border-radius: 20px;
+        }
+
+            .phantram > p {
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                font-size: 9px;
+                position: relative;
+                bottom: 29px;
+                left: 22px;
+            }
+
+            .phantram > img {
+                border-radius: 20px;
+                width: 20px;
+                height: 20px;
+            }
+
+        .RAM > span {
+            font-size: 88%;
+            padding: 2px;
+            border: 1px solid lightgray;
+            width: max-content;
+            margin-right: 5px;
+            border-radius: 2px;
+        }
+
+        .Name {
+            width: 220px;
+            font-weight: bold;
+        }
+
+        .Gia {
+            font-size: 100%;
+        }
+
+        .GT > table {
+            width: 220px;
+            font-size: 13px;
+        }
+
+
+
+        #Foot {
+            clear: both;
+            height: 180px;
+            border-top: 1px solid lightgray;
+        }
+
+        .Inline {
+            float: left;
+            margin-right: 110px;
+        }
+
+        #GTT1 {
+            margin-left: 70px;
+        }
+
+        .GTThem > p > a {
+            color: black;
+            line-height: 30px;
+        }
+
+        .GTThem > p > a:hover {
+                color: deepskyblue;
+            }
+
+        .Blue {
+            color: deepskyblue;
+        }
+
+        .CungHang > ul {
+            width: 300px;
+        }
+
+        .CungHang {
+            float: right;
+            margin-right: 20px;
+        }
+
+            .CungHang > p {
+                padding-left: 40px;
+            }
+
+        #Last {
+            clear: both;
+            height: 70px;
+            background-color: lightgray;
+            text-align: center;
+            padding-top: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="Head">
+        <ul>
+            <li class="TieuDe" id="Title">
+                <a href="Index.html"> <img width="50px" height="35px" src="hinhanh/nhan.jpg" />  </a>
+                <a href="Index.html"> <b> myshop.com </b> </a>
+            </li>
+            <li id="TimKiem">
+                <div id="Searching">
+                    <input type="text" id="Search" placeholder="Bạn tìm gì..." />
+                    <img width="23px" height="23px" src="hinhanh/lup.jpg" />
+                </div>
+            </li>
+
+            <li id="LichSu">
+                <button class="TieuDe">
+                    <a href="LichSuGioHang.html">  <img width="25px" height="25px" src="hinhanh/lsgh.jpg" />  </a>
+                    <a href="LichSuGioHang.html"> <p> Lịch sử <br /> đơn hàng</p>  </a>
+                </button>
+
+            </li>
+            <li id="GioHang">
+                <button class="TieuDe" style="font-size: 16px; ">
+                    <a href="GioHang.html"> <img width="25px" height="25px" src="hinhanh/gio.jpg" /> </a>
+                    <a href="GioHang.html"><p>  Giỏ hàng</p></a>
+                </button>
+            </li>
+            <li>
+                <div id="Register" class="Sin"> <a href="DangKy.html"> Đăng Ký </a> </div>
+                <div id="LogIn" class="Sin"> <a href="DangNhap.html"> Đăng Nhập </a> </div>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <div id="Body">
+        <div id="Line">
+            <h1> Áo Fila </h1>
+        </div>
+        <table id="TbleLap">
+            <tr>
+                <td>
+                    <div id="LapIntel1" class="LapMau">
+                        <div class="Hover_it1 Center_it">
+                            <a class="Hover_it" href="AoJin.html"><p class="Tragop"> Trả góp 0% </p> </a>
+                            <a class="Hover_it1 Hover_it" href="AoJin.html">
+                                <img width="190px" src="hinhanh/ao jin.jpg" />
+                            </a>
+                            <div class="phantram">
+                                <img src="hinhanh/phantram.jpg" />
+                                <p> giảm sốc </p>
+                            </div>
+                            <div class="Name">
+                                <a class="Hover_it1 Hover_it" href="AoJin.html"> <p> Áo Jin </p> </a>
+                            </div>
+                            
+                            <div class="Giam">
+                                <a class="Hover_it" href="AoJin.html">
+                                    <p> Online giá rẻ </p>
+                                </a>
+                                <div>
+                                    <a class="Hover_it" href="AoJin.html">
+                                        <p class=" GiaGoc"> <b> 3.990.000đ </b> <p class="Tru"> -25% </p>
+                                        <h5 class="Gia">2.000.000đ </h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </td>
+                <td>
+                    <div id="LapIntel2" class="LapMau">
+                        <div class="Hover_it1 Center_it">
+                            <a class="Hover_it" href="AoJungKook.html"><p class="Tragop"> Trả góp 0% </p> </a>
+                            <a class="Hover_it1 Hover_it" href="AoJungKook.html">
+                                <img width="190px" src="hinhanh/ao jungkook.jpg" />
+                            </a>
+                            <div class="phantram">
+                                <img src="hinhanh/phantram.jpg" />
+                                <p> giảm sốc </p>
+                            </div>
+                            <div class="Name">
+                                <a class="Hover_it1 Hover_it" href="AoJungKook.html"> <p> Áo JungKook </p> </a>
+                            </div>
+                            
+                            <div class="Giam">
+                                <a class="Hover_it" href="AoJungKook.html">
+                                    <p> Online giá rẻ </p>
+                                </a>
+                                <div>
+                                    <a class="Hover_it" href="AoJungKook.html">
+                                        <p class=" GiaGoc"> <b> 5.990.000đ </b> <p class="Tru"> -10% </p>
+                                        <h5 class="Gia">4.990.000đ </h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div id="Foot">
+        <div id="ThongTinThem">
+            <div class="GTThem Inline" id="GTT1">
+                <p>
+                    <a href="#"> Tìm hiểu về mua trả góp </a> <br />
+                    <a href="#"> Chính sách bảo hành </a> <br />
+                    <a href="#"> Chính sách đổi trả</a> <br />
+                    <a href="#"> Bán hàng doanh nghiệp</a> <br />
+                    <a href="#"> In hóa đơn điện tử</a> <br />
+                </p>
+            </div>
+            <div class="GTThem Inline">
+                <p>
+                    <a href="#"> Tuyển dụng</a> <br />
+                    <a href="#"> Chi nhánh hoạt động </a> <br />
+                    <a href="#"> Giới thiệu doanh nghiệp </a> <br />
+                    <a href="#"> Gửi góp ý, khiếu nại </a> <br />
+                    <a href="#"> Xem bản Mobile</a> <br />
+                </p>
+            </div>
+            <div class="LienHe Inline">
+                <p>
+                    <b> Tổng đài hỗ trợ </b>(Miễn phí cuộc gọi) <br />
+                    Gọi mua: <a href="#">  <b class="Blue"> 1800.1001 </b> </a> (7:30 - 22:00) <br />
+
+                    Kỹ thuật:  <a href="#">
+                        <b class="Blue"> 1800.1717 </b>
+                    </a> (7:30 - 22:00) <br />
+
+                    Khiếu nại:   <a href="#">
+                        <b class="Blue"> 1800.1007 </b>
+                    </a> (8:00 - 21:30) <br />
+
+                    Bảo hành:  <a href="#"> <b class="Blue"> 1800.1070  </b> </a> (8:00 - 21:00)<br />
+                </p>
+            </div>
+
+            <div class="CungHang">
+                <p>  Webside cùng tập đoàn </p>
+                <ul>
+                    <img width="70px" height="20px" src="hinhanh/tiktok.png" />
+                    <img width="70px" height="20px" src="hinhanh/face.png" />
+                    <img width="70px" height="20px" src="hinhanh/weverse.jpg" />
+                    
+                </ul>
+                <ul>
+                    <img width="70px" height="20px" src="hinhanh/shopee.png" />
+                    <img width="70px" height="20px" src="hinhanh/tiki.png" />
+                    <img width="70px" height="20px" src="hinhanh/lazada.jpg" />
+                </ul>
+                
+            </div>
+
+        </div>
+        <div id="Last">
+            <p>
+                Họ và tên: Võ Thị Bảo Ngọc ; MSSV:2001210162 ; Lớp:12DHTH02
+            </br>Đây là sản phẩm báo cáo cuối kỳ cho bộ môn thiết kế web
+             </p>
+
+        </div>
+    </div>
+</body>
+</html>
